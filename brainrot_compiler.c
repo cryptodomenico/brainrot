@@ -232,6 +232,7 @@ ASTNode* parse_program(Lexer* lexer) {
 void generate_code(ASTNode* node, FILE* output) {
     if (!node) return;
 
+    //still working on this it doesnt work quite well for nowo 💀💀💀💀
     switch (node->type) {
         case NODE_PROGRAM:
             fprintf(output, "section .text\n");
@@ -288,6 +289,7 @@ void generate_program(ASTNode* ast, const char* output_file) {
 
     // Header Assembly
     fprintf(output, "section .data\n");
+    //gotta fix this💀💀💀
     fprintf(output, "    message db \"Hello, World!\", 0\n\n");
     fprintf(output, "section .text\n");
     fprintf(output, "    global _start\n\n");
