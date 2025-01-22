@@ -124,5 +124,4 @@ Want to add features or fix bugs? Feel free to submit a pull request or open an 
 
 ## License
 
-MIT License
-
+Apache-2.0 license
